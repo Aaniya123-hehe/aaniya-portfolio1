@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aaniya Khairdi — Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <!-- Portfolio Styles -->
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ============================================================
+     NAVIGATION
+     ============================================================ -->
+<nav id="nav">
+  <div class="n-logo">AK<span>.</span></div>
+  <ul class="n-links" id="nl">
+    <li><span class="n-link on"  data-t="home">Home</span></li>
+    <li><span class="n-link"     data-t="about">About</span></li>
+    <li><span class="n-link"     data-t="education">Education</span></li>
+    <li><span class="n-link"     data-t="experience">Experience</span></li>
+    <li><span class="n-link"     data-t="achievements">Achievements</span></li>
+    <li><span class="n-link"     data-t="certificates">Certificates</span></li>
+    <li><span class="n-link"     data-t="contact">Contact</span></li>
+  </ul>
+  <button class="theme-toggle" id="themeBtn" aria-label="Toggle theme" title="Toggle dark/light mode">
+    <i class="fa-solid fa-sun"></i>
+  </button>
+  <button class="hbg" id="hbg" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="wrap">
+
+  <!-- ============================================================
+       SIDEBAR
+       ============================================================ -->
+  <aside class="sb">
+    <div class="sb-in">
+
+      <!-- Profile Photo -->
+      <div class="ph-wrap">
+        <div class="ph-ring"></div>
+        <img
+          src="profile.png"
+          alt="Aaniya Khairdi"
+          class="ph-img lb-able"
+          id="phImg"
+          onerror="this.style.display='none';document.getElementById('phIni').style.display='flex'"
+        />
+        <div class="ph-ini" id="phIni">AK</div>
+      </div>
+
+      <h2 class="sb-name">Aaniya<br/><span>Khairdi</span></h2>
+      <p class="sb-role">BBA Student · Event Enthusiast</p>
+
+      <div class="sb-div"></div>
+
+      <!-- Contact -->
+      <div class="sb-sec">
+        <h4 class="sb-sec-t">Contact</h4>
+        <ul class="sb-list">
+          <li><i class="fa-solid fa-location-dot"></i><span>Solapur, Maharashtra</span></li>
+          <li><i class="fa-brands fa-instagram"></i>
+              <a href="https://instagram.com/no_one_22714" target="_blank">@no_one_22714</a></li>
+        </ul>
+      </div>
+
+      <div class="sb-div"></div>
+
+      <!-- Languages -->
+      <div class="sb-sec">
+        <h4 class="sb-sec-t">Languages</h4>
+        <div class="chips">
+          <span class="chip">English</span>
+          <span class="chip">Hindi</span>
+          <span class="chip">Marathi</span>
+        </div>
+      </div>
+
+      <div class="sb-div"></div>
+
+      <!-- Core Skills -->
+      <div class="sb-sec">
+        <h4 class="sb-sec-t">Core Skills</h4>
+        <ul class="sk-list">
+          <li>
+            <span class="sk-lbl">Communication</span>
+            <div class="sk-bar-wrap">
+              <span class="sk-pct">90%</span>
+              <div class="sk-bar"><div class="sk-fill" data-p="90"></div></div>
+            </div>
+          </li>
+          <li>
+            <span class="sk-lbl">Event Coordination</span>
+            <div class="sk-bar-wrap">
+              <span class="sk-pct">85%</span>
+              <div class="sk-bar"><div class="sk-fill" data-p="85"></div></div>
+            </div>
+          </li>
+          <li>
+            <span class="sk-lbl">Public Speaking</span>
+            <div class="sk-bar-wrap">
+              <span class="sk-pct">88%</span>
+              <div class="sk-bar"><div class="sk-fill" data-p="88"></div></div>
+            </div>
+          </li>
+          <li>
+            <span class="sk-lbl">Quick Learning</span>
+            <div class="sk-bar-wrap">
+              <span class="sk-pct">92%</span>
+              <div class="sk-bar"><div class="sk-fill" data-p="92"></div></div>
+            </div>
+          </li>
+          <li>
+            <span class="sk-lbl">Teamwork</span>
+            <div class="sk-bar-wrap">
+              <span class="sk-pct">87%</span>
+              <div class="sk-bar"><div class="sk-fill" data-p="87"></div></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </aside><!-- /sidebar -->
+
+  <!-- ============================================================
+       MAIN CONTENT
+       ============================================================ -->
+  <main class="main">
+
+    <!-- HOME -->
+    <section class="sec hero" id="home">
+      <div class="hero-txt rv">
+        <p class="h-hi">Hello, I'm</p>
+        <h1 class="h-name">Aaniya <span class="rg">Khairdi</span></h1>
+        <p class="h-sub">BBA 1st Year &nbsp;·&nbsp; MIT Vishwaprayag University, Solapur</p>
+        <p class="h-quote" id="hq"></p>
+        <div class="btns">
+          <a href="#contact" class="btn-p"><i class="fa-solid fa-envelope"></i> Get In Touch</a>
+          <!-- Replace # below with the path to your resume PDF once you have one -->
+          <a href="#" class="btn-o" id="dlBtn"><i class="fa-solid fa-download"></i> Download Resume</a>
+        </div>
+      </div>
+      <div class="deco">
+        <div class="dc d1"></div>
+        <div class="dc d2"></div>
+        <div class="dc d3"></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="sec" id="about">
+      <div class="s-hdr rv">
+        <span class="s-tag">Who I Am</span>
+        <h2 class="s-title">About <span class="rg">Me</span></h2>
+      </div>
+      <div class="ab-grid rv">
+        <div class="card ab-card">
+          <div class="c-icon"><i class="fa-solid fa-bullseye"></i></div>
+          <h3>Career Objective</h3>
+          <p style="font-size:.88rem;color:var(--light)">As a first-year BBA student, I am eager to build a strong foundation in business management and administration. My goal is to leverage my communication skills, event coordination experience, and passion for meaningful connections to forge a rewarding career in business leadership or event management.</p>
+        </div>
+        <div class="card ab-card">
+          <div class="c-icon"><i class="fa-solid fa-user"></i></div>
+          <h3>Personal Profile</h3>
+          <ul class="p-list">
+            <li><span>Name</span>      <strong>Aaniya Khairdi</strong></li>
+            <li><span>Height</span>    <strong>5'4"</strong></li>
+            <li><span>Gender</span>    <strong>Female</strong></li>
+            <li><span>Location</span>  <strong>Solapur, Maharashtra</strong></li>
+            <li><span>Instagram</span> <strong>@no_one_22714</strong></li>
+            <li><span>Languages</span> <strong>English, Hindi, Marathi</strong></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="sec" id="education">
+      <div class="s-hdr rv">
+        <span class="s-tag">My Journey</span>
+        <h2 class="s-title">Edu<span class="rg">cation</span></h2>
+      </div>
+      <div class="tl rv">
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="card tl-card">
+            <span class="tl-badge">Pursuing</span>
+            <h3>Bachelor of Business Administration (BBA)</h3>
+            <p class="tl-inst"><i class="fa-solid fa-university"></i> MIT Vishwaprayag University, Solapur</p>
+            <p class="tl-yr">2025 — Present &nbsp;·&nbsp; 1st Year</p>
+            <p style="font-size:.86rem;color:var(--light)">Building expertise in business fundamentals, management principles, and organizational behaviour.</p>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="card tl-card">
+            <span class="tl-badge done">Completed</span>
+            <h3>HSC — Higher Secondary Certificate</h3>
+            <p class="tl-inst"><i class="fa-solid fa-school"></i> St. Joseph High School &amp; Junior College of Science, Solapur</p>
+            <p class="tl-yr">Science Stream</p>
+            <p style="font-size:.86rem;color:var(--light)">Achieved <strong style="color:var(--rg)">First Rank</strong> in the HSC Board Examinations — honoured with a Certificate of Merit for General Proficiency.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="sec" id="experience">
+      <div class="s-hdr rv">
+        <span class="s-tag">What I've Done</span>
+        <h2 class="s-title">Experi<span class="rg">ence</span></h2>
+      </div>
+      <div class="exp-grid rv">
+        <div class="card exp-card">
+          <div class="e-icon"><i class="fa-solid fa-calendar-check"></i></div>
+          <h3>Event Hosting</h3>
+          <p>Assisted in hosting and anchoring college and school events — managing stage presence, audience engagement, and live coordination.</p>
+        </div>
+        <div class="card exp-card">
+          <div class="e-icon"><i class="fa-solid fa-hands-helping"></i></div>
+          <h3>Event Volunteering</h3>
+          <p>Volunteered across multiple college and school events, contributing to logistics, crowd management, and behind-the-scenes work.</p>
+        </div>
+        <div class="card exp-card">
+          <div class="e-icon"><i class="fa-solid fa-people-group"></i></div>
+          <h3>Team Coordination</h3>
+          <p>Worked collaboratively within diverse teams during event planning and execution, building interpersonal and leadership skills.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section class="sec" id="achievements">
+      <div class="s-hdr rv">
+        <span class="s-tag">My Wins</span>
+        <h2 class="s-title">Achieve<span class="rg">ments</span></h2>
+      </div>
+      <div class="rv">
+        <div class="card ach-card">
+          <div class="ach-badge"><i class="fa-solid fa-trophy"></i></div>
+          <div class="ach-txt">
+            <h3>🎯 First Rank — HSC Examination</h3>
+            <p>Secured <strong style="color:var(--rg-light)">First Position in Junior College</strong> during the HSC Board Examinations at St. Joseph High School &amp; Junior College of Science, Solapur. Recognised with a <em>Certificate of Merit</em> for General Proficiency (2025).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STRENGTHS -->
+    <section class="sec" id="strengths">
+      <div class="s-hdr rv">
+        <span class="s-tag">My Edge</span>
+        <h2 class="s-title"><span class="rg">Strengths</span></h2>
+      </div>
+      <div class="str-grid rv">
+        <div class="card str-card"><i class="fa-solid fa-microphone-lines"></i><h4>Confident Speaking</h4><p>Comfortable addressing any audience with clarity and poise.</p></div>
+        <div class="card str-card"><i class="fa-solid fa-book-open-reader"></i><h4>Reading Books</h4><p>Passionate reader fuelling continuous learning and curiosity.</p></div>
+        <div class="card str-card"><i class="fa-solid fa-comments"></i><h4>Meaningful Conversations</h4><p>Builds genuine connections through thoughtful dialogue.</p></div>
+        <div class="card str-card"><i class="fa-solid fa-handshake"></i><h4>Communication Skills</h4><p>Strong verbal and written communicator across all settings.</p></div>
+        <div class="card str-card"><i class="fa-solid fa-bolt"></i><h4>Quick Learner</h4><p>Adapts rapidly to new environments, tools, and concepts.</p></div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATES -->
+    <section class="sec" id="certificates">
+      <div class="s-hdr rv">
+        <span class="s-tag">Recognition</span>
+        <h2 class="s-title">Certifi<span class="rg">cates</span></h2>
+      </div>
+      <div class="cert-grid rv">
+        <div class="card cert-card">
+          <div class="cert-ico"><i class="fa-solid fa-award"></i></div>
+          <span class="cert-iss">St. Joseph High School &amp; Jr. College, Solapur</span>
+          <h3 class="cert-title">Certificate of Merit</h3>
+          <p class="cert-desc">Awarded for securing First Rank in HSC Examinations — General Proficiency.</p>
+          <p class="cert-dt"><i class="fa-regular fa-calendar"></i> 2025</p>
+          <!-- Upload your certificate PDF to the repo and update the href below -->
+          <a href="Aaniya_Khairdi_81811.pdf" class="btn-cert" target="_blank">
+            <i class="fa-solid fa-eye"></i> View Certificate
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="sec" id="contact">
+      <div class="s-hdr rv">
+        <span class="s-tag">Say Hello</span>
+        <h2 class="s-title">Get In <span class="rg">Touch</span></h2>
+      </div>
+      <div class="ct-wrap rv">
+        <div class="ct-info">
+          <p>I'm always open to new opportunities, collaborations, or just a friendly chat. Feel free to reach out!</p>
+          <ul class="ct-links">
+            <li><i class="fa-solid fa-location-dot"></i><span>Solapur, Maharashtra, India</span></li>
+            <li><i class="fa-brands fa-instagram"></i>
+                <a href="https://instagram.com/no_one_22714" target="_blank">@no_one_22714</a></li>
+          </ul>
+        </div>
+        <form class="card ct-form" id="ctForm" onsubmit="sendForm(event)">
+          <div class="fg"><label>Your Name</label><input type="text" placeholder="e.g. Riya Sharma" required/></div>
+          <div class="fg"><label>Your Email</label><input type="email" placeholder="riya@example.com" required/></div>
+          <div class="fg"><label>Message</label><textarea rows="4" placeholder="Write your message here..." required></textarea></div>
+          <button type="submit" class="btn-p" id="fBtn"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+          <p class="f-ok" id="fOk">✨ Thank you! Message received.</p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+</div><!-- /wrap -->
+
+<!-- FOOTER -->
+<footer>Crafted with <span class="rg">♥</span> by Aaniya Khairdi &nbsp;·&nbsp; <span class="rg">2025</span></footer>
+
+<!-- Back to top -->
+<button class="st" id="stBtn" aria-label="Back to top"><i class="fa-solid fa-chevron-up"></i></button>
+
+<!-- LIGHTBOX -->
+<div class="lb-overlay" id="lbOverlay">
+  <button class="lb-close" id="lbClose" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+  <div class="lb-inner">
+    <img id="lbImg" src="" alt=""/>
+  </div>
+</div>
+
+<!-- Portfolio Script -->
+<script src="script.js"></script>
+</body>
+</html>
